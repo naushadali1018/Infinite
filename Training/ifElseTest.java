@@ -1,3 +1,5 @@
+package Training;
+
 import java.util.Scanner;
 
 public class ifElseTest {
