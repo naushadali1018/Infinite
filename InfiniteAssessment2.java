@@ -96,22 +96,32 @@ public class InfiniteAssessment2 {
         Scanner sc=new Scanner(System.in);
         Donor donorDetails= new Donor();
         System.out.println("Enter the name :");
-        donorDetails.setName(sc.next());
+        String name="";
+        name+=sc.nextLine();
+        donorDetails.setName(name);
         System.out.println("Enter Date of Birth :");
-        donorDetails.setDateOfBirth(sc.next());
+        String DOB="";
+        DOB+=sc.nextLine();
+        donorDetails.setDateOfBirth(DOB);
         System.out.println("Enter Gender :");
-        donorDetails.setGender(sc.next());
+        donorDetails.setGender(sc.nextLine());
         System.out.println("Enter Mobile Number :");
-        donorDetails.setMobileNumber(sc.next());
+        donorDetails.setMobileNumber(sc.nextLine());
         System.out.println("Enter Blood Group :");
-        donorDetails.setBloodGroup(sc.next());
+        String BGroup="";
+        BGroup+=sc.nextLine();
+        donorDetails.setBloodGroup(BGroup);
         System.out.println("Enter Blood Bank Name :");
-        donorDetails.setBloodBankName(sc.next());
-        System.out.println("Enter Donor Type :");
-        donorDetails.setDonorType(sc.next());
+        String BB="";
+        BB+=sc.nextLine();
+        donorDetails.setBloodBankName(BB);
+        String DType="";
+        DType+=sc.nextLine();
+        donorDetails.setDonorType(DType);
         System.out.println("Enter Donation Date :");
-        donorDetails.setDonationDate(sc.next());
+        donorDetails.setDonationDate(sc.nextLine());
         donorDetails.displayDonationDetails();
+        sc.close();
     }
 
 
