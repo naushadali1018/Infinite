@@ -1,0 +1,4 @@
+2022-10-18 23:57:10 PM [main] INFO  c.B.SpringBootExampleApplication - Starting SpringBootExampleApplication using Java 11.0.12 on DELLINF-4IL0VR2 with PID 10540 (C:\Users\naushada\Downloads\SpringBootExample\SpringBootExample\target\classes started by naushada in C:\Users\naushada\Downloads\SpringBootExample)
+2022-10-18 23:57:10 PM [main] INFO  c.B.SpringBootExampleApplication - No active profile set, falling back to 1 default profile: "default"
+2022-10-18 23:57:10 PM [main] INFO  c.B.SpringBootExampleApplication - Started SpringBootExampleApplication in 0.893 seconds (JVM running for 1.213)
+2022-10-18 23:57:10 PM [main] ERROR c.B.SpringBootExampleApplication - Login denied. Invalid credentials.
