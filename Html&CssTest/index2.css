@@ -1,0 +1,33 @@
+img{
+    margin: 10px 0;
+    width: 180px;
+    height: 200px;
+    border-radius: 10%;
+}
+body{
+    background-color:whitesmoke;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    border-radius: 25%;
+}
+
+.card-title{
+    padding-top: 3%;
+}
+.text{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+.buybutton{
+
+    float: right;
+}
+h6{
+    float: left;
+}
