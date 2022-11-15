@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let dateObject1 = new Date(); 
+console.log("Date is: " + dateObject1);
+dateObject1.setDate(15);
+
+console.log("Date is: " + dateObject1.getDate());
+console.log("Day is: " + dateObject1.getDay());
+console.log("Year is : " + dateObject1.getYear());
+console.log("Hours: " + dateObject1.getHours());
+console.log("Month is: " + dateObject1.getMonth());
+console.log("Time is: " + dateObject1.getTime());
+console.log("Millisecond: " + dateObject1.getMilliseconds());
+
+let  dataObject2 = new Date(2020, 5, 18, 22, 20, 23, 0000); 
+console.log("Date is: "+dataObject2); 
+
+let myString = "Welcom to JavaScript Session"; 
+console.log("Length is: " + myString.length); 
+
+let myString1 = "Hello World"; 
+console.log("Character at position 4 is : " + myString1.charAt(3)); 
+
+let myStr1 = "Hello"; 
+let myStr2 = " "; 
+let myStr3 = "World"; 
+console.log("Concatenated string: "+myStr1.concat(myStr2,myStr3)); 
+//Returns: Concatenated string: Hello World 
+
+
+let myString2= "Hello World"; 
+console.log("Index of character l is : "+myString2.indexOf('l')); 
+
+let myStr = "Are you enjoying JavaScript?"; 
+console.log(myStr.match(/you/).index); 
+
+
+let myStr4 = "Are you enjoying JavaScript?"; 
+myStr4 = myStr4.replace('you', 'they'); 
+console.log(myStr4); 
+let myString5 = "can you find it?"; 
+console.log("Occurrence of find in statement1: "+myString5.search('find')); 
+let myString6 = "Or you can not?"; 
+console.log("Occurrence of find in statement2: "+myString6.search('find'));
+let myString7 = "Hello World"; 
+console.log("Split string based on spaces: "+myString7.split(" ")); 
+
+console.log("Slicing using 2 parameters: "+myString1.slice(0,5)); 
+console.log("Slicing using 1 parameter: "+myString1.slice(5)); 
+
+console.log("Substring using 2 parameters: "+myString1.substring(-2,5)); 
+console.log("Substring using 1 parameter: "+myString1.substring(5)); 
+
+console.log("Substr using 2 parameters: "+myString1.substr(2,5)); 
+console.log("Substr using 1 parameter: "+myString1.substr(5)); 
+    </script>
+</body>
+</html>

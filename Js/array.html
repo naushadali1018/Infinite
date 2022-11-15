@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numArr = [1, 2, 3, 4];
+console.log(numArr[0]); //1
+console.log(numArr[3]); //4
+
+let colors = new Array("Red", "Orange", "Green");
+
+console.log(colors.length); //2
+//Assign values to an empty array using indexes
+// colors[0] = "Red";
+// colors[1] = "Green";
+console.log(colors); //['Red','Green']
+
+let numArr1 = [10, 5, 20];
+//spread turns array into the list of arguments
+console.log(Math.max(...numArr1)); // 20 
+
+let arr1 = [3, 5, 1];
+let arr2 = [8, 2, 6];
+let newArr = [0,...arr1,4, ...arr2];
+console.log(newArr); // [3,5,1,8,2,6]
+
+
+let arrCopy = [...arr1];
+arrCopy.push(4);
+console.log(arrCopy);
+console.log(arr1);
+//arrCopy becomes [3,5,1,4] and arr1 remains unaffected
+
+let empArr = ["Shaan", 104567];
+// destructuring assignment
+// sets empName = empArr[0]
+// and empId = empArr[1]
+let [empName, empId] = empArr;
+console.log(empName); // Shaan
+console.log(empId);  // 104567
+
+let [empName1, , location1] = ["Shaan", 104567, "Bangalore"];
+//Here second element of array is skipped and third element is assigned to location variable
+console.log(empName1); // Shaan
+console.log(location1);  // Bangalore
+
+let [empName2, ...rest1] = ["Shaan", 104567, "Bangalore"];
+console.log("name = "+empName2); // Shaan
+console.log(rest1);  // [104567,'Bangalore']
+
+let colors1 = ["Red", "Orange", "Green"];
+for (let i = 0; i < colors1.length; i++) {
+    console.log(colors[i]);
+}
+
+
+// iterates over array elements
+for (let color of colors1) {
+    console.log(color);
+}
+
+
+
+let myarr= ["Android","ios","windows"];
+
+// console.log("pop="+myarr.pop());
+// console.log(myarr);
+
+//shift& unshift
+// console.log(myarr.shift());
+// console.log(myarr);
+
+// myarr.unshift("Linux");
+// console.log(myarr);
+
+
+// splice
+// myarr.splice(1,1,"Linux");
+// console.log(myarr);
+
+// console.log(myarr.slice(1,2))
+
+// let myarr2=["abc","xyz"];
+
+// console.log(myarr.concat(myarr2));
+
+// console.log(myarr.indexOf("ios"));
+
+// function abc(element){
+//    return element.length>5
+// }
+// let result = myarr.find(abc);
+
+// let result = myarr.filter(element => element.length>5)
+// console.log("result = "+result);
+
+// myarr.forEach((element,index)=>console.log(index+"-"+element));
+
+// let numarr=[2,4,6,8];
+// let result = numarr.map(num=>num/2);
+// console.log(result);
+
+// console.log(myarr.join("-"))
+
+// const numarr2=[1,2,3,4];
+// console.log(numarr2.reduce((accumulator,currentval) => accumulator + currentval,5 ));
+
+
+    </script>
+</body>
+</html>

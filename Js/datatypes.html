@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pi = 3.14; // its value is 3.14  
+        const smallestNaturalNumber = 0; // its value is 0
+
+        console.log(pi+"   "+smallestNaturalNumber);
+        // let result = 0/0; // its value is NaN  
+        let result = "Ten" * 5; //its value is NaN 
+        console.log(result);
+        let personName= "Rexh'a";    //OR  
+        let personName1 = 'Rexh"a';    // both will have its value as Rexha 
+        console.log(personName + "  "+personName1);
+
+        let firstName="Kevin"; 
+        let lastName="Patrick";
+        console.log("Name: "+firstName+" "+lastName+"\n Email:"+firstName+"_"+lastName+"@abc.com");
+        console.log(`Name:${firstName} ${lastName} \n Email: ${firstName}_${lastName}@abc.com`); 
+
+
+        let custName = null; 
+        console.log(custName==null);
+
+        // const bigintvar = 67423478234689887894747472389477823647n;
+        const bigintvar = BigInt("67423478234689887894747472389477823647");
+        const bigintFromNumber = BigInt(10); // same as 10n
+        console.log(bigintFromNumber+" "+bigintvar);
+
+
+        // alert(3n + 2n); // 5
+        // alert(7n / 2n); // 3
+        // alert(8n + 2); // Error: Cannot mix BigInt and other types
+
+let a="3";
+        // alert( 5 == 5n ); // true
+        // alert( 5 === 5n ); // false
+        // alert(3==a);
+        // alert(3===a);
+
+        // alert( 1n || 2n); 
+        // 1, here 1n is considered truthy
+        // alert( 0n || 2 ); 
+        // 2, here 0n is considered falsy
+
+
+        if(6n){
+            // alert("from if");
+        }
+
+        let mySmartPhone = { 
+            name: "iPhone", 
+            brand: "Apple", 
+            platform: "iOS", 
+            price: 50000 
+        }; 
+
+        console.log(mySmartPhone)
+
+       let digits =[1,2,3,"four"]; 
+       console.log(digits);
+
+
+
+    </script>
+</body>
+</html>
