@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check Console Thank You</h1>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;x
+            }
+
+            getDetails() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Age: ${this.age}`);
+            }
+        }
+
+        class Employee extends Person {
+            constructor(name, age, role, contact) {
+                super(name, age);
+                this.role = role;
+                this.contact=contact
+            }
+
+            getDetails() {
+                super.getDetails();
+                console.log(`Role: ${this.role}`);
+                console.log(`Phone: ${this.contact}`);
+            }
+        }
+
+        const john = new Employee('John', 29, 'software engineer', '712738127');
+        john.getDetails();
+
+    </script>
+</body>
+
+</html>
